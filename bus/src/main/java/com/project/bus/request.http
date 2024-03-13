@@ -1,0 +1,54 @@
+### GET ALL IDS
+GET http://localhost:8080/getAll
+
+
+### GET BY ID
+GET http://localhost:8080/getOne/2
+
+### SIGN UP
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "id":"2",    
+  "email":"uchiha@gmail.com",    
+  "password":"12345",    
+  "name":"Nihak",    
+  "phn":"9765594954"  
+}
+
+### UPDATE BY ID
+PUT http://localhost:8080/update/2
+Content-Type:application/json
+
+{
+   "id":"2",    
+  "email":"NihakUchiha@gmail.com",    
+  "password":"123456",    
+  "name":"nihal",    
+  "phn":"9768994954"    
+}
+
+### /delete/{id}
+DELETE http://localhost:8080/delete/2
+
+### /getOne/{offset}/{pageSize}/{field}
+GET http://localhost:8080/getOne/0/10/id
+
+
+### post2
+POST http://localhost:8080/post2
+Content-Type: application/json
+
+{
+    "customerId":101,
+    "busId":5,
+    "busName":"SNS",
+    "ticketId":20,
+    "signUpModel":{
+      "id":1
+    }
+}
+
+### /sort/{field}
+GET http://localhost:8080/sort/localhost:8080/sort/id
